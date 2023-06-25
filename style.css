@@ -129,17 +129,12 @@
   margin-bottom: 5ch;
 }
 
-p {
+.tab-content > p {
   margin-top: 2ch;
   margin-bottom: 5ch;
 }
 
 /* Footer */
-
-.footer {
-  grid-area: 3 / 1 / 4 / 2;
-  background-color: azure;
-}
 
 .footer {
   background-color: rgb(162, 184, 129);
