@@ -129,6 +129,10 @@
   margin-bottom: 5ch;
 }
 
+.tab-content:first-child {
+  margin-top: 9ch;
+}
+
 .tab-content > p {
   margin-top: 2ch;
   margin-bottom: 5ch;
