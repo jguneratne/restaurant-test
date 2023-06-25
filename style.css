@@ -110,6 +110,14 @@
   margin-right: auto;
   text-align: center;
 
+  /* Invert corners of tab background. Generated from https://css-generators.com/custom-corners/*/
+  --mask: radial-gradient(40px at 40px 40px, #0000 98%, #000) -40px -40px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  outline-offset: -4.5ch;
+  outline: 1px solid rgb(46, 75, 1);
+
   display: flex;
   flex-direction: column;
   align-items: center;
