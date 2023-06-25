@@ -51,6 +51,8 @@
   align-items: center;
 }
 
+/* Navigation Bar */
+
 .nav {
   grid-area: 1 / 1 / 2 / 2;
   background-color: rgb(162, 184, 129);
@@ -86,20 +88,50 @@
   background-color: rgb(173, 184, 155);
 }
 
+/* Main Body with Tabs */
+
 .main {
   grid-area: 2 / 1 / 3 / 2;
   background-color: aquamarine;
   background-image: url(assets/imgs/Guneratne_2022.07.06_5007105.jpg);
   background-attachment: fixed;
   overflow: auto;
+
+  display: grid;
 }
+
+.tabs {
+  background-color: rgb(162, 184, 129);
+  width: 70%;
+  height: min-content;
+  margin-top: 6ch;
+  margin-bottom: 6ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-content {
+  width: 80%;
+  margin-top: 5ch;
+  margin-bottom: 5ch;
+}
+
+p {
+  margin-top: 2ch;
+  margin-bottom: 5ch;
+}
+
+/* Footer */
 
 .footer {
   grid-area: 3 / 1 / 4 / 2;
   background-color: azure;
 }
-
-/* Footer */
 
 .footer {
   background-color: rgb(162, 184, 129);
