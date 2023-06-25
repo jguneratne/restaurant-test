@@ -104,10 +104,7 @@
   background-color: rgb(162, 184, 129);
   width: 70%;
   height: min-content;
-  margin-top: 6ch;
-  margin-bottom: 6ch;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 6ch auto 6ch auto;
   text-align: center;
 
   /* Invert corners of tab background. Generated from https://css-generators.com/custom-corners/*/
