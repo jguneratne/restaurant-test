@@ -12,7 +12,7 @@
   font-family: "Shantell Sans Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("assets/fonts/shantell-sans-v7-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/shantell-sans-v7-latin-regular.woff2") format("woff2");
 }
 
 /* shantell-sans-500 - latin */
@@ -20,7 +20,7 @@
   font-family: "Shantell Sans Light Bold";
   font-style: normal;
   font-weight: 500;
-  src: url("assets/fonts/shantell-sans-v7-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/shantell-sans-v7-latin-500.woff2") format("woff2");
 }
 
 /* shantell-sans-600 - latin */
@@ -28,7 +28,7 @@
   font-family: "Shantell Sans Bold";
   font-style: normal;
   font-weight: 600;
-  src: url("assets/fonts/shantell-sans-v7-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/shantell-sans-v7-latin-600.woff2") format("woff2");
 }
 
 /* shantell-sans-700 - latin */
@@ -36,7 +36,29 @@
   font-family: "Shantell Sans Bolder";
   font-style: normal;
   font-weight: 700;
-  src: url("assets/fonts/shantell-sans-v7-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/shantell-sans-v7-latin-700.woff2") format("woff2");
+}
+
+/* ysabeau-infant-300 - latin */
+@font-face {
+  font-family: "Ysabeau Infant Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("assets/fonts/ysabeau-infant-v1-latin-300.woff2") format("woff2");
+}
+/* ysabeau-infant-regular - latin */
+@font-face {
+  font-family: "Ysabeau Infant";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/ysabeau-infant-v1-latin-regular.woff2") format("woff2");
+}
+/* ysabeau-infant-500 - latin */
+@font-face {
+  font-family: "Ysabeau Infant Light Bold";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/ysabeau-infant-v1-latin-500.woff2") format("woff2");
 }
 
 * {
@@ -88,6 +110,13 @@
   background-color: rgb(173, 184, 155);
 }
 
+.tab-btn:focus {
+  box-sizing: border-box;
+  outline: 1px solid rgb(46, 75, 1);
+  outline-offset: none;
+  border: 1px solid rgb(46, 75, 1);
+}
+
 /* Main Body with Tabs */
 
 .main {
@@ -130,9 +159,63 @@
   margin-top: 9ch;
 }
 
+.tab-content > h3 {
+  font-family: "Shantell Sans Bolder", cursive;
+}
+
 .tab-content > p {
   margin-top: 2ch;
   margin-bottom: 5ch;
+  font-family: "Ysabeau Infant", Arial, Helvetica, sans-serif;
+  font-size: 2.3ch;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+
+label {
+  display: block;
+  text-align: left;
+  font-family: "Shantell Sans Light Bold";
+}
+
+label:after {
+  content: ": ";
+}
+
+input[type="text"],
+textarea {
+  font-family: "Ysabeau Infant Light", Arial, Helvetica, sans-serif;
+  font-size: 2ch;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0.5ch;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="text"]:focus,
+textarea:focus,
+input[type="submit"]:focus {
+  outline: 0.3ch solid rgb(46, 75, 1);
+}
+
+input[type="submit"] {
+  font-family: "Ysabeau Infant", Arial, Helvetica, sans-serif;
+  font-size: 2ch;
+  background-color: rgb(105, 129, 69);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 6ch;
+}
+
+input[type="submit"]:hover {
+  background-color: #2a632d;
 }
 
 /* Footer */
@@ -146,7 +229,7 @@
   align-content: center;
   align-items: center;
 
-  font-family: "Shantell Sans Regular", Arial, Helvetica, sans-serif;
+  font-family: "Ysabeau Infant", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -160,4 +243,11 @@
 .footer img {
   height: 3.5ch;
   margin-left: 1ch;
+}
+
+.footer a:focus {
+  box-sizing: border-box;
+  outline: 1px solid rgb(46, 75, 1);
+  outline-offset: none;
+  border: 1px solid rgb(46, 75, 1);
 }
