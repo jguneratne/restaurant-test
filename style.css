@@ -106,7 +106,8 @@
   font-size: 2.1ch;
 }
 
-.tab-btn:hover {
+.tab-btn:hover,
+.tab-btn:active {
   background-color: rgb(173, 184, 155);
 }
 
@@ -153,6 +154,11 @@
   width: 84%;
   margin-top: 5ch;
   margin-bottom: 5ch;
+  display: none;
+}
+
+.tab-content:active {
+  display: block;
 }
 
 .tab-content:first-child {
