@@ -150,7 +150,7 @@
 }
 
 .tab-content {
-  width: 80%;
+  width: 84%;
   margin-top: 5ch;
   margin-bottom: 5ch;
 }
@@ -159,9 +159,7 @@
   margin-top: 9ch;
 }
 
-.heading {
-  margin-top: -1ch;
-  margin-bottom: 1.3ch;
+.tab-content > h3 {
   font-family: "Shantell Sans Bolder", cursive;
 }
 
@@ -172,11 +170,60 @@
   font-size: 2.3ch;
 }
 
+.heading {
+  margin-top: -1ch;
+  margin-bottom: 1.3ch;
+  font-family: "Shantell Sans Bolder", cursive;
+}
+
 .tab-content > p:last-child {
   margin-top: 2ch;
   margin-bottom: 5ch;
   font-family: "Ysabeau Infant", Arial, Helvetica, sans-serif;
   font-size: 2.3ch;
+}
+
+/* Home Tab */
+
+.home-content {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: min-content;
+}
+
+.home-header {
+  grid-area: 1 / 1 / 2 / 2;
+  margin-top: 0;
+  height: max-content;
+}
+
+.home-body {
+  grid-area: 2 / 1 / 3 /2;
+
+  display: grid;
+  grid-template-columns: 1fr 2.3fr 1fr;
+}
+
+.call-to-action-menu {
+  grid-area: 1 / 1 / 2 / 2;
+  margin-top: 0;
+  font-family: "Shantell Sans Light Bold", cursive;
+}
+
+.home-img {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.home-img > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.call-to-action-book {
+  grid-area: 1 / 3 / 2 / 4;
+  margin-top: 0;
+  font-family: "Shantell Sans Light Bold", cursive;
 }
 
 /* Menu Tab */
