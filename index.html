@@ -18,13 +18,13 @@
           <button class="tab-btn" data-for-tab="home">Home</button>
           <button class="tab-btn" data-for-tab="about">About</button>
           <button class="tab-btn" data-for-tab="menu">Menu</button>
-          <button class="tab-btn" data-for-tab="order">Order Online</button>
+          <button class="tab-btn" data-for-tab="reserve">Reservations</button>
           <button class="tab-btn" data-for-tab="contact">Contact</button>
         </div>
       </div>
 
       <div class="main">
-        <div class="home-tab tabs" data-tab="home">
+        <!-- <div class="home-tab tabs" data-tab="home">
           <div class="tab-content">
             <h3>What is Lorem Ipsum?</h3>
             <p>
@@ -114,9 +114,9 @@
               ipsum dolor sit amet..", comes from a line in section 1.10.32.
             </p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="about-tab tabs" data-tab="about">
+        <!-- <div class="about-tab tabs" data-tab="about">
           <div class="tab-content">
             <h3>Serving the Best Local Food Since 2020!</h3>
             <p>
@@ -157,8 +157,8 @@
               sustainable and delicious cuisine.
             </p>
           </div>
-        </div>
-
+        </div> -->
+        <!-- 
         <div class="menu-tab tabs" data-tab="menu">
           <div class="tab-content">
             <div class="menu-card">
@@ -232,10 +232,63 @@
               <img src="" alt="Photo Coming Soon!" class="menu-img" />
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="order-tab tabs" data-tab="order">
-          <div class="tab-content"></div>
+        <div class="reserve-tab tabs" data-tab="reserve">
+          <div class="tab-content">
+            <h1>Table Reservations</h1>
+            <div class="req"><p>Required Fileds are Marked with *</p></div>
+
+            <form action="#" method="POST">
+              <label for="name">*Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Full Name"
+                required
+              />
+
+              <label for="email">*Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <label for="phone">*Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Your Phone Number"
+                required
+              />
+
+              <div class="date-div">
+                <label for="date">*Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+
+              <div class="time-div">
+                <label for="time">*Time</label>
+                <input type="time" id="time" name="time" step="900" required />
+              </div>
+
+              <label for="guests">*Number of Guests</label>
+              <input type="number" id="guests" name="guests" min="1" required />
+
+              <label for="special-requests">Special Requests</label>
+              <textarea
+                id="special-requests"
+                name="special-requests"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
         </div>
 
         <div class="contact-tab tabs" data-tab="contact">

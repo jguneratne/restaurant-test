@@ -218,12 +218,22 @@
   margin-bottom: 5ch;
 }
 
-/* Contact Tab */
+/* Reservations and Contact Forms */
+
+h1 {
+  font-family: "Shantell Sans Bolder", cursive;
+  margin-bottom: 0;
+}
+
+.req {
+  margin-top: 1ch;
+  margin-bottom: 3ch;
+}
 
 label {
   display: block;
   text-align: left;
-  font-family: "Shantell Sans Light Bold";
+  font-family: "Shantell Sans Light Bold", cursive;
 }
 
 label:after {
@@ -231,21 +241,47 @@ label:after {
 }
 
 input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
 textarea {
   font-family: "Ysabeau Infant Light", Arial, Helvetica, sans-serif;
   font-size: 2ch;
   width: 100%;
-  padding: 12px;
+  padding: 1ch;
   border: 1px solid #ccc;
   border-radius: 0.5ch;
   box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 0.8ch;
+  margin-bottom: 3ch;
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.date-div,
+.time-div {
+  text-align: left;
+}
+
+input[type="date"],
+input[type="time"] {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0.5ch;
+  text-align: left;
+  padding: 1ch;
+  margin-top: 0.8ch;
+  margin-bottom: 3ch;
+  width: 20ch;
+  font-family: "Ysabeau Infant Light", Arial, Helvetica, sans-serif;
 }
 
 input[type="text"]:focus,
 textarea:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
 input[type="submit"]:focus {
   outline: 0.3ch solid rgb(46, 75, 1);
 }
