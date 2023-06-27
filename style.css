@@ -159,7 +159,9 @@
   margin-top: 9ch;
 }
 
-.tab-content > h3 {
+.heading {
+  margin-top: -1ch;
+  margin-bottom: 1.3ch;
   font-family: "Shantell Sans Bolder", cursive;
 }
 
@@ -220,9 +222,10 @@
 
 /* Reservations and Contact Forms */
 
-h1 {
+h2 {
   font-family: "Shantell Sans Bolder", cursive;
   margin-bottom: 0;
+  margin-top: -1ch;
 }
 
 .req {
