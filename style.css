@@ -275,6 +275,7 @@ input[type="number"] {
   margin-bottom: 3ch;
   width: 20ch;
   font-family: "Ysabeau Infant Light", Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
 input[type="text"]:focus,
