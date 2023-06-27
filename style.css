@@ -165,6 +165,13 @@
 
 .tab-content > p {
   margin-top: 2ch;
+  margin-bottom: 3ch;
+  font-family: "Ysabeau Infant", Arial, Helvetica, sans-serif;
+  font-size: 2.3ch;
+}
+
+.tab-content > p:last-child {
+  margin-top: 2ch;
   margin-bottom: 5ch;
   font-family: "Ysabeau Infant", Arial, Helvetica, sans-serif;
   font-size: 2.3ch;
