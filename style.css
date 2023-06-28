@@ -108,10 +108,20 @@
 
 .tab-btn:hover,
 .tab-btn:active {
-  background-color: rgb(173, 184, 155);
+  background-color: rgb(115, 130, 92);
 }
 
-.tab-btn:focus {
+.tab-btn--active {
+  width: 16ch;
+  border: none;
+  background-color: rgb(115, 130, 92);
+  font-family: "Shantell Sans Bolder", cursive;
+  font-size: 2.1ch;
+  text-decoration: underline;
+}
+
+.tab-btn:focus,
+.tab-btn--active:focus {
   box-sizing: border-box;
   outline: 1px solid rgb(46, 75, 1);
   outline-offset: none;
@@ -145,20 +155,16 @@
   outline-offset: -4.5ch;
   outline: 1px solid rgb(46, 75, 1);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: none;
+}
+
+.tabs--active {
+  display: block;
 }
 
 .tab-content {
   width: 84%;
-  margin-top: 5ch;
-  margin-bottom: 5ch;
-  display: none;
-}
-
-.tab-content:active {
-  display: block;
+  margin: 5ch auto 5ch auto;
 }
 
 .tab-content:first-child {
