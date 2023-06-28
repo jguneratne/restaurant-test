@@ -211,11 +211,6 @@
   height: max-content;
 }
 
-.call-to-act {
-  margin-top: 0;
-  font-family: "Shantell Sans Light Bold", cursive;
-}
-
 .call-to-action-menu {
   grid-area: 2 / 1 / 3 / 2;
 }
