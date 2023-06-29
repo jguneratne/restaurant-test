@@ -363,7 +363,7 @@ input.tab-btn.pretend,
 input.tab-btn.home {
   font-family: "Ysabeau Infant", Arial, Helvetica, sans-serif;
   font-size: 2.3ch;
-  background-color: var(--form-btn-color);
+  background-color: var(--hover-green-color);
   color: var(--submit-font-color);
   text-align: center;
   padding: 12px 20px;
@@ -371,11 +371,19 @@ input.tab-btn.home {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 6ch;
+  text-decoration: none;
 }
 
 input.tab-btn.pretend:hover,
 input.tab-btn.home:hover {
-  background-color: var(--hover-green-color);
+  background-color: var(--form-btn-color);
+  text-decoration: none;
+}
+
+input.tab-btn.pretend--active,
+input.tab-btn.home--active {
+  background-color: var(--form-btn-color);
+  text-decoration: none;
 }
 
 /* Footer */

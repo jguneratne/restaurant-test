@@ -5,6 +5,7 @@ function setupTabs() {
       const clickedTab = button.dataset.forTab;
       const contentContainer = document.querySelector(".main");
       const homeContent = document.querySelector(".home-content");
+      const pretendSubmit = document.querySelector(".pretend");
       const activeTab = contentContainer.querySelector(
         `.tabs[data-tab="${clickedTab}"]`
       );
@@ -19,6 +20,10 @@ function setupTabs() {
 
       homeContent.querySelectorAll(".tab-btn").forEach((button) => {
         button.classList.remove("tab-btn--active");
+      });
+
+      pretendSubmit.querySelectorAll(".pretend").forEach((pretendBtn) => {
+        pretendBtn.classList.remove("tab-btn--active");
       });
 
       button.classList.add("tab-btn--active");
