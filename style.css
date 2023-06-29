@@ -69,7 +69,7 @@
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 7fr 0.8fr;
+  grid-template-rows: auto 1fr auto;
   align-items: center;
 }
 
@@ -378,8 +378,7 @@ input.tab-btn.home:hover {
   grid-area: 3 / 1 / 4 / 2;
   font-family: "Ysabeau Infant", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  margin-top: auto;
-  margin-bottom: auto;
+  padding-top: 0.8ch;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
